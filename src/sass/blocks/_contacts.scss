@@ -1,0 +1,113 @@
+.contacts {
+	min-height: 600px;
+	padding: 120px 0 92px 0;
+
+	&__wrapper {
+		padding: 0 35px 0 52px;
+		display: grid;
+		justify-content: space-between;
+		grid-template: auto auto minmax(389px, auto) / 400px 585px;
+		row-gap: 20px;
+	}
+
+	&__photo {
+		grid-row: 3 span;
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__title {
+		margin-top: 6px;
+		position: relative;
+		padding-left: 12px;
+
+		@include before-circle;
+	}
+
+	&__social {
+		&-icons {
+			margin-top: 20px;
+			display: grid;
+			grid-auto-flow: column;
+			grid-template-rows: 30px;
+			grid-auto-columns: 30px;
+			column-gap: 25px;
+		}
+	}
+
+	&__form {
+		form {
+			margin-top: 30px;
+			display: grid;
+			grid-template: 45px 190px 45px / repeat(2, 1fr);
+			gap: 29px 25px;
+
+			> div {
+				position: relative;
+			}
+
+			label {
+				position: absolute;
+				font-size: 12px;
+				line-height: 18px;
+				padding: 0 8px;
+				background-color: #fff;
+				left: 12px;
+				transform: translateY(-50%);
+			}
+		}
+
+		&-name, &-email {
+			input {
+				width: 100%;
+				height: 100%;
+				font-size: 12px;
+				padding: 0 20px;
+			}
+		}
+
+		&-message {
+			grid-column: span 2;
+
+			textarea {
+				width: 100%;
+				height: 100%;
+				padding: 14px 20px;
+				font-size: 12px;
+				resize: none;
+			}
+		}
+
+		&-triggers {
+			display: flex;
+			grid-column: span 2;
+			align-items: center;
+			justify-content: space-between;
+			align-content: space-between;
+			flex-flow: row wrap-reverse;
+			width: 100%;
+			height: 100%;
+		}
+
+		&-policy {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 295px;
+			margin-right: 50px;
+
+			span {
+				font-size: 12px;
+			}
+
+			input {
+				width: 11px;
+				height: 11px;
+			}
+		}
+	}
+}

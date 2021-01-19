@@ -1,0 +1,353 @@
+@media (max-width: 1439px) {
+	.sidepanel {
+		display: none;
+	}
+}
+
+@media (max-width: 1407px) {
+	.skills {
+		&__carousel {
+			&-next {
+				right: calc((100% - 1119px) / 2 - 40px);
+	
+				&:hover {
+					right: calc((100% - 1119px) / 2 - 40px - 10px);
+				}
+			}
+
+			&-prev {
+				left: calc((100% - 1119px) / 2 - 40px);
+
+				&:hover {
+					left: calc((100% - 1119px) / 2 - 40px - 10px);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1343px) {
+	.skills {
+		&__carousel {
+			&-next, &-prev {
+				display: none;
+			}
+		}
+
+		&__competencies {
+			align-content: flex-start;
+			margin-top: 127px;
+			min-height: unset;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.hamburger {
+		&:before {
+			opacity: .98;
+			position: absolute;
+			content: '';
+			width: 200px;
+			height: 200px;
+			right: -130px;
+			top: -145px;
+			box-shadow: -10px 10px 10px #fff;
+			border-radius: 50%;
+			background-color: #fff;
+			z-index: -1;
+		}
+	}
+
+	.about {
+		&__wrapper {
+			grid-template-columns: 400px 520px;
+			column-gap: 40px;
+		}
+
+		&__skills {
+			grid-template-columns: repeat(2, 250px);
+			column-gap: 20px;
+		}
+
+		&__skill {
+			grid-template-columns: 40px 195px;
+			column-gap: 15px;
+		}
+	}
+
+	.resume {
+		&__wrapper {
+			padding: 0 48px;
+			grid-template-columns: repeat(2, 402px);
+			column-gap: 60px;
+		}
+	}
+
+	.portfolio {
+		&__work {
+			&-wide, &-high {
+				grid-row: unset;
+				grid-column: unset;
+			}
+		}
+	}
+
+	.contacts {
+		padding-bottom: 50px;
+
+		&__wrapper {
+			grid-template-columns: 300px 525px;
+		}
+
+		&__form {
+			form {
+				grid-template-rows: 45px 190px 76px;
+				row-gap: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.title {
+		&_fs36 {
+			font-size: 30px;
+		}
+	}
+
+	.about {
+		&__wrapper {
+			grid-template-columns: 300px 380px;
+		}
+
+		&__skills {
+			grid-template-columns: 360px;
+			grid-auto-rows: minmax(115px, auto);
+		}
+
+		&__skill {
+			grid-template-columns: 40px 320px;
+			column-gap: 20px;
+		}
+	}
+
+	.resume {
+		&__wrapper {
+			padding: 0;
+			grid-template-columns: repeat(2,330px);
+			justify-content: space-between;
+			column-gap: unset;
+		}
+	}
+
+	.price-list {
+		&__content {
+			padding: 0;
+		}
+	}
+
+	.contacts {
+		&__wrapper {
+			padding: 0;
+			grid-template-columns: 260px 426px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+
+	.title {
+		&_fs48 {
+			font-size: 28px;
+			line-height: 39px;
+		}
+	}
+
+	.promo {
+		&__title {
+			width: 300px;
+		}
+	}
+
+	.about {
+		padding-top: 40px;
+
+		&__wrapper {
+			grid-template: 400px auto auto / 1fr;
+		}
+
+		&__photo {
+			grid-row: unset;
+		}
+
+		&__skills {
+			grid-template-columns: repeat(2, 260px);
+		}
+
+		&__skill {
+			grid-template-columns: 40px 200px;
+		}
+	}
+
+	.resume {
+		padding-top: 40px;
+
+		&__wrapper {
+			grid-template-columns: repeat(2,250px);
+		}
+	}
+
+	.skills {
+		padding-top: 40px;
+	}
+
+	.portfolio {
+		padding-top: 40px;
+	}
+
+	.price-list {
+		padding-top: 40px;
+
+		&__content {
+			justify-content: center;
+			grid-template-columns: auto;
+		}
+	}
+
+	.contacts {
+		padding: 40px 0 50px 0;
+
+		&__wrapper {
+			grid-template-columns: 168px 348px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.title {
+		&_fs36 {
+			font-size: 24px;
+			line-height: 36px;
+		}
+
+		&_fs48 {
+			font-size: 26px;
+			line-height: 39px;
+		}
+	}
+
+	.divider {
+		&_mt25mb60 {
+			margin: 15px auto 20px auto;
+		}
+	}
+
+	.hamburger {
+		right: 20px;
+
+		&:before {
+			width: 160px;
+			height: 160px;
+			right: -100px;
+			top: -115px;
+		}
+	}
+
+	.menu {
+		&__block {
+			width: 250px;
+			padding-left: 20px;
+		}
+	}
+
+	.promo {
+		background: #bce0f4 url('../img/main_bg.jpg') 58%/cover no-repeat;
+
+		&__title {
+			width: 290px;
+		}
+
+		&__btns {
+			margin-top: 30px;
+		}
+	}
+
+	.about {
+		&__wrapper {
+			grid-template-rows: 340px auto auto;
+			row-gap: 20px;
+		}
+
+		&__skills {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.resume {
+		&__wrapper {
+			padding-top: 20px;
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.skills {
+		&__competencies {
+			margin-top: 40px;
+			grid-template-columns: repeat(auto-fit, 300px);
+		}
+	}
+
+	.contacts {
+		&__photo {
+			display: none;
+		}
+
+		&__wrapper {
+			grid-template-columns: 1fr;
+		}
+
+		&__form {
+			form {
+				row-gap: 27px;
+				grid-template: 45px 45px 143px 101px / 1fr;
+			}
+
+			&-message {
+				grid-column: span 1;
+			}
+
+			&-triggers {
+				grid-column: span 1;
+				justify-content: center;
+			}
+
+			&-policy {
+				margin-right: 0;
+				width: 180px;
+				justify-content: center;
+
+				span {
+					margin-left: 10px;
+					width: 163px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,103 @@
+.resume {
+	min-height: 678px;
+	padding-top: 120px;
+
+	&__title {
+		position: relative;
+		margin-top: 6px;
+
+		@include before-circle;
+
+		&:before {
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__wrapper {
+		display: grid;
+		padding: 0 65px;
+		grid-template-columns: repeat(2, 425px);
+		column-gap: 135px;
+	}
+
+	&__column {
+		&-title {
+			padding-left: 35px;
+			margin-bottom: 0;
+			position: relative;
+
+			@include before_circle-mini;
+		}
+
+		ul {
+			list-style: none;
+
+			li {
+				position: relative;
+
+				&::after {
+					content: '';
+					width: 1px;
+					height: calc(100% + 2px);
+					position: absolute;
+					top: -8px;
+					left: 0;
+					background-color: #000;
+				}
+			}
+		}
+	}
+
+	&__item {
+		position: relative;
+
+		&:before {
+			content: '';
+			height: 1px;
+			width: 45px;
+			position: absolute;
+			background-color: #000;
+			top: 54px
+		}
+
+		&-head {
+			position: relative;
+			padding: 40px 0 0 100px;
+		}
+
+		&-body {
+			padding-left: 43px;
+			margin-top: 12px;
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		&-icon {
+			position: absolute;
+			top: 50px;
+			left: 45px;
+
+			@include before-circle;
+
+			&:before {
+				top: 9px;
+			}
+
+			img {
+				position: absolute;
+				left: 16px;
+				top: 5px;
+			}
+		}
+
+		&-title {
+			margin-bottom: 0;
+		}
+
+		&-subtitle {
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+}

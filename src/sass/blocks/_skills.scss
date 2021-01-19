@@ -1,0 +1,149 @@
+.skills {
+	min-height: 854px;
+	padding-top: 120px;
+
+	&__title {
+		position: relative;
+		margin-top: 6px;
+
+		@include before_circle;
+
+		&:before {
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__teches {
+		display: grid;
+		min-height: 553px;
+		max-width: 1119px;
+		justify-content: center;
+		margin: 0 auto;
+		grid-template-columns: repeat(auto-fit, 270px);
+		grid-auto-rows: minmax(270px, auto);
+		gap: 13px;
+	}
+
+	&__tech {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 30px;
+		padding-bottom: 25px;
+		border: 1px solid #000;
+
+		&-icon {
+			display: flex;
+			align-items: center;
+			height: 65px;
+			margin-bottom: 20px;
+		}
+
+		&-title {
+			margin-bottom: 15px;
+		}
+
+		&-descr {
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+
+	&__competencies {
+		padding-top: 7px;
+		min-height: 553px;
+		max-width: 1140px;
+		display: grid;
+		margin: 0 auto;
+		justify-content: center;
+		grid-template-columns: repeat(auto-fit, 350px);
+		grid-auto-rows: 63px;
+		align-content: center;
+		gap: 30px 45px;
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&-head {
+			position: relative;
+			padding-left: 13px;
+			display: flex;
+			justify-content: space-between;
+
+
+			div {
+				&:first-child {
+					@include before_circle;
+				}
+			}
+		}
+
+		&-percent {
+			font-size: 14px;
+			line-height: 21px;
+		}
+
+		&-progress {
+			height: 14px;
+			background-color: #E8E4DE;
+			border-radius: 4px;
+
+			&-inner {
+				height: 100%;
+				width: 0;
+				background-color: $main-color;
+				border-radius: 4px;
+			}
+		}
+	}
+
+	&__carousel {
+		position: relative;
+
+		.tns-item {
+			transition: opacity .3s;
+		}
+
+		&-next, &-prev {
+			position: absolute;
+			top: 50%;
+			border: none;
+			outline: none;
+			background-color: transparent;
+			transition: all .6s, left ease-out .4s, right ease-out .4s;
+
+			img {
+				height: 100px;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		&-next {
+			right: calc((100% - 1119px) / 2 - 72px);
+			transform: translate(55px, -50%);
+
+			&:hover {
+				right: calc((100% - 1119px) / 2 - 72px - 10px);
+			}
+		}
+
+		&-prev {
+			visibility: hidden;
+			left: calc((100% - 1119px) / 2 - 72px);
+			transform: translate(-76px, -50%);
+
+			&:hover {
+				left: calc((100% - 1119px) / 2 - 72px - 10px);
+			}
+		}
+	}
+}
