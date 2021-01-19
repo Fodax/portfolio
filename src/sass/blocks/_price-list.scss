@@ -1,5 +1,5 @@
 .price-list {
-	min-height: 403px;
+	min-height: 100px;
 	padding-top: 120px;
 
 	&__title {
@@ -37,7 +37,7 @@
 		justify-content: space-between;
 
 		span {
-			max-width: 157px;
+			max-width: 165px;
 		}
 
 		@include before_circle-mini;

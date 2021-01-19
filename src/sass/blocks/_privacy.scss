@@ -1,0 +1,34 @@
+.privacy {
+	margin: 15px;
+	padding: 10px;
+	border: solid rgba(0, 0, 0, .5) 1px;
+
+	a {
+		word-wrap: break-word;
+	}
+
+	ol {
+		list-style: none;
+		counter-reset: li;
+
+		li {
+			margin-left: 20px;
+		}
+	}
+
+	&__section-title {
+		&:before {
+			counter-increment: li;
+			content: counters(li,".") ". ";
+		}
+	}
+
+	&__section-list {
+		li {
+			&:before {
+				counter-increment: li;
+				content: counters(li,".") ". ";
+			}
+		}
+	}
+}

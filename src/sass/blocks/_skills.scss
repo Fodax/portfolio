@@ -21,6 +21,7 @@
 		max-width: 1119px;
 		justify-content: center;
 		margin: 0 auto;
+		align-items: center;
 		grid-template-columns: repeat(auto-fit, 270px);
 		grid-auto-rows: minmax(270px, auto);
 		gap: 13px;
@@ -28,6 +29,7 @@
 
 	&__tech {
 		display: flex;
+		height: 270px;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;

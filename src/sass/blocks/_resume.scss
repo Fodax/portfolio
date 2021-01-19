@@ -1,5 +1,5 @@
 .resume {
-	min-height: 678px;
+	min-height: 300px;
 	padding-top: 120px;
 
 	&__title {
@@ -16,8 +16,9 @@
 
 	&__wrapper {
 		display: grid;
+		justify-content: center;
 		padding: 0 65px;
-		grid-template-columns: repeat(2, 425px);
+		grid-template-columns: repeat(auto-fit, 425px);
 		column-gap: 135px;
 	}
 
@@ -30,10 +31,10 @@
 			@include before_circle-mini;
 		}
 
-		ul {
+		> ul {
 			list-style: none;
 
-			li {
+			> li {
 				position: relative;
 
 				&::after {
@@ -71,6 +72,18 @@
 			margin-top: 12px;
 			font-size: 12px;
 			line-height: 18px;
+
+			ul {
+				list-style: disc;
+			}
+
+			a {
+				color: #000;
+		
+				&:hover {
+					color: $main-color;
+				}
+			}
 		}
 
 		&-icon {
