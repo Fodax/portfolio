@@ -12,6 +12,8 @@
 
 	&__photo {
 		grid-row: 3 span;
+		background: rgb(189,224,244);
+		background: linear-gradient(144deg, rgba(189,224,244,1) 0%, rgba(158,145,236,1) 100%);
 
 		img {
 			height: 100%;
@@ -28,14 +30,24 @@
 		@include before-circle;
 	}
 
-	&__social {
-		&-icons {
-			margin-top: 20px;
-			display: grid;
-			grid-auto-flow: column;
-			grid-template-rows: 30px;
-			grid-auto-columns: 30px;
-			column-gap: 25px;
+	&__social-icons {
+		margin-top: 20px;
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-rows: 30px;
+		grid-auto-columns: 30px;
+		column-gap: 25px;
+	}
+	
+	&__social-icon {
+		path {
+			transition: fill .2s;
+		}
+
+		&:hover {
+			path {
+				fill: $main-color;
+			}
 		}
 	}
 

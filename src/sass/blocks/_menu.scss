@@ -99,13 +99,30 @@
 
 	&__social {
 		position: absolute;
-		width: 90px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		bottom: 50px;
 		left: 50%;
 		transform: translateX(-50%);
+
+		a {
+			margin-right: 15px;
+
+			path {
+				transition: fill .2s;
+			}
+
+			&:hover {
+				path {
+					fill: #fff;
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 
 	&__overlay {

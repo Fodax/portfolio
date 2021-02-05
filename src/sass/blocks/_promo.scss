@@ -4,7 +4,9 @@
 	left: 0;
 	right: 0;
 	top: 0;
-	background: #bce0f4 url('../img/main_bg.jpg') 50% / cover no-repeat;
+	// background: #bce0f4 url('../img/main_bg.jpg') 50% / cover no-repeat;
+	background: rgb(189,224,244);
+	background: linear-gradient(130deg, rgba(189,224,244,1) 0%, rgba(134,191,224,1) 100%);
 	padding-top: 205px;
 	z-index: -50;
 

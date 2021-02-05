@@ -18,9 +18,10 @@
 	&__content {
 		display: grid;
 		padding: 0 50px;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(2, fit-content(calc(50% - 25px)));
 		grid-auto-rows: minmax(44px, auto); 
 		row-gap: 15px;
+		column-gap: 50px;
 		justify-content: space-between;
 	}
 
@@ -37,7 +38,7 @@
 		justify-content: space-between;
 
 		span {
-			max-width: 165px;
+			// max-width: 165px;
 		}
 
 		@include before_circle-mini;

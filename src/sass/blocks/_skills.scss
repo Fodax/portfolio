@@ -1,5 +1,5 @@
 .skills {
-	min-height: 854px;
+	min-height: 576px;
 	padding-top: 120px;
 
 	&__title {
@@ -17,7 +17,7 @@
 
 	&__teches {
 		display: grid;
-		min-height: 553px;
+		min-height: 256px;
 		max-width: 1119px;
 		justify-content: center;
 		margin: 0 auto;
@@ -56,8 +56,8 @@
 
 	&__competencies {
 		padding-top: 7px;
-		min-height: 553px;
 		max-width: 1140px;
+		min-height: 256px;
 		display: grid;
 		margin: 0 auto;
 		justify-content: center;
