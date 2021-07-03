@@ -166,18 +166,18 @@
 		max-width: 540px;
 	}
 
-	.title {
-		&_fs48 {
-			font-size: 28px;
-			line-height: 39px;
-		}
-	}
+	// .title {
+	// 	&_fs48 {
+	// 		font-size: 28px;
+	// 		line-height: 39px;
+	// 	}
+	// }
 
-	.promo {
-		&__title {
-			width: 300px;
-		}
-	}
+	// .promo {
+	// 	&__title {
+	// 		width: 300px;
+	// 	}
+	// }
 
 	.about {
 		padding-top: 40px;
@@ -277,6 +277,7 @@
 
 	.promo {
 		// background: #bce0f4 url('../img/main_bg.jpg') 58%/cover no-repeat;
+		padding-top: 206px;
 
 		&__title {
 			width: 290px;

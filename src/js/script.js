@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	const sections = document.querySelectorAll('section'),
 	hamburger = document.querySelector('.hamburger'),
 	menu = document.querySelector('.menu'),
+	menuOverlay = document.querySelector('.menu__overlay'),
 	closeElem = document.querySelector('.menu__close');
 	carousel = document.querySelector('.skills__carousel'),
 	links = document.querySelectorAll('a[href^="#"][data-smooth-scroll]'),
@@ -161,6 +162,10 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 	closeElem.addEventListener('click', () => {
+		menu.classList.remove('menu_active');
+	});
+
+	menuOverlay.addEventListener('click', () => {
 		menu.classList.remove('menu_active');
 	});
 

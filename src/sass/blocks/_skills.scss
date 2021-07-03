@@ -40,8 +40,14 @@
 		&-icon {
 			display: flex;
 			align-items: center;
-			height: 65px;
 			margin-bottom: 20px;
+			height: 65px;
+			width: 100%;
+
+			img {
+				height: 100%;
+				max-width: 100%;
+			}
 		}
 
 		&-title {
