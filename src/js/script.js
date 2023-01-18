@@ -235,7 +235,11 @@ window.addEventListener('DOMContentLoaded', () => {
 		fetch('../mailer/smart.php', {
 			method: 'POST',
 			body: formData
-		}).finally(() => {
+		})
+		.then(() => {
+			ym(71455423,'reachGoal','sendform');
+		})
+		.finally(() => {
 			e.target.reset();
 		});
 	});
