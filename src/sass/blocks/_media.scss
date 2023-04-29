@@ -90,7 +90,7 @@
 
 	.portfolio {
 		&__work {
-			&-wide, &-high {
+			&_wide, &_high {
 				grid-row: unset;
 				grid-column: unset;
 			}
