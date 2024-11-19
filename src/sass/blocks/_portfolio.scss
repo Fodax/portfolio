@@ -1,3 +1,5 @@
+@use "../base/mixins";
+
 .portfolio {
 	min-height: 866px;
 	padding-top: 120px;
@@ -6,7 +8,7 @@
 		position: relative;
 		margin-top: 6px;
 
-		@include before_circle;
+		@include mixins.before_circle;
 
 		&:before {
 			left: 50%;

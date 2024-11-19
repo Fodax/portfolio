@@ -1,3 +1,5 @@
+@use "../base/mixins";
+
 .about {
 	padding-top: 120px;
 	min-height: 720px;
@@ -26,7 +28,7 @@
 		padding-top: 2px;
 		margin-top: 6px;
 		
-		@include before_circle;
+		@include mixins.before_circle;
 	}
 
 	&__bio {
@@ -50,7 +52,7 @@
 		&-icon {
 			position: relative;
 			padding: 15px 0 0 15px;
-			@include before_circle;
+			@include mixins.before_circle;
 
 			&:before {
 				top: 18px;

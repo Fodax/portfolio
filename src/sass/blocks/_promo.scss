@@ -1,3 +1,5 @@
+@use "../base/mixins";
+
 .promo {
 	min-height: 100vh;
 	position: fixed;
@@ -17,7 +19,7 @@
 		position: relative;
 		padding-left: 10px;
 
-		@include before_circle;
+		@include mixins.before_circle;
 	}
 
 	&__btns {

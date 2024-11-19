@@ -1,3 +1,6 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 .skills {
 	min-height: 854px;
 	padding-top: 120px;
@@ -6,7 +9,7 @@
 		position: relative;
 		margin-top: 6px;
 
-		@include before_circle;
+		@include mixins.before_circle;
 
 		&:before {
 			left: 50%;
@@ -79,7 +82,7 @@
 
 			div {
 				&:first-child {
-					@include before_circle;
+					@include mixins.before_circle;
 				}
 			}
 		}
@@ -97,7 +100,7 @@
 			&-inner {
 				height: 100%;
 				width: 0;
-				background-color: $main-color;
+				background-color: variables.$main-color;
 				border-radius: 4px;
 			}
 		}
