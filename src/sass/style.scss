@@ -1,10 +1,11 @@
-@import 'libs/bootstrap-reboot.min';
-@import 'libs/tiny-slider';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-
 //base
-@import 'base/variables';
-@import 'base/mixins';
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+@use "sass:meta";
+@use 'libs/bootstrap-reboot.min';
+@use 'libs/tiny-slider';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 // body {
 //     overflow: hidden;
@@ -26,19 +27,19 @@ section {
 }
 
 //blocks
-@import 'blocks/title';
-@import 'blocks/button';
-@import 'blocks/divider';
-@import 'blocks/sidepanel';
+@include meta.load-css('blocks/title');
+@include meta.load-css('blocks/button');
+@include meta.load-css('blocks/divider');
+@include meta.load-css('blocks/sidepanel');
 // @import 'blocks/nav';
-@import 'blocks/menu';
-@import 'blocks/promo';
-@import 'blocks/about';
-@import 'blocks/resume';
-@import 'blocks/skills';
-@import 'blocks/portfolio';
-@import 'blocks/price-list';
-@import 'blocks/contacts';
-@import 'blocks/privacy';
+@include meta.load-css('blocks/menu');
+@include meta.load-css('blocks/promo');
+@include meta.load-css('blocks/about');
+@include meta.load-css('blocks/resume');
+@include meta.load-css('blocks/skills');
+@include meta.load-css('blocks/portfolio');
+@include meta.load-css('blocks/price-list');
+@include meta.load-css('blocks/contacts');
+@include meta.load-css('blocks/privacy');
 
-@import 'blocks/media';
+@include meta.load-css('blocks/media');

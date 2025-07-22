@@ -1,3 +1,5 @@
+@use "../base/variables";
+
 .sidepanel {
 	display: flex;
 	align-items: center;
@@ -22,7 +24,7 @@
 
 		&:hover {
 			path {
-				fill: $main-color;
+				fill: variables.$main-color;
 			}
 		}
 

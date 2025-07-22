@@ -1,3 +1,5 @@
+@use "../base/mixins";
+
 .price-list {
 	min-height: 100px;
 	padding-top: 120px;
@@ -6,7 +8,7 @@
 		position: relative;
 		margin-top: 6px;
 
-		@include before_circle;
+		@include mixins.before_circle;
 
 		&:before {
 			left: 50%;
@@ -41,7 +43,7 @@
 			// max-width: 165px;
 		}
 
-		@include before_circle-mini;
+		@include mixins.before_circle-mini;
 
 		&:before {
 			left: -26px;

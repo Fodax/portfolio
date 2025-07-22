@@ -1,3 +1,6 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 .contacts {
 	min-height: 600px;
 	padding: 120px 0 92px 0;
@@ -27,7 +30,7 @@
 		position: relative;
 		padding-left: 12px;
 
-		@include before-circle;
+		@include mixins.before-circle;
 	}
 
 	&__social-icons {
@@ -46,7 +49,7 @@
 
 		&:hover {
 			path {
-				fill: $main-color;
+				fill: variables.$main-color;
 			}
 		}
 	}
